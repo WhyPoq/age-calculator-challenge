@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Age calculator app</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+    <main>
+      <!--date selection-->
+      <div class="date-selection-content">
+        <div class="date-field">
+          <p class="field-header">DAY</p>
+          <input type="number" placeholder="DD">
+          <p class="error-text">Error</p>
+        </div>
+        <div class="date-field">
+          <p class="field-header">MONTH</p>
+          <input type="number" placeholder="MM">
+          <p class="error-text">Error</p>
+        </div>
+        <div class="date-field">
+          <p class="field-header">YEAR</p>
+          <input type="number" placeholder="YYYY">
+          <p class="error-text">Error</p>
+        </div>
+      </div>
+
+      <!--middle section-->
+      <div class="middle">
+        <div class="middle-line"></div>
+        <button class="image-container">
+          <img src="./assets/images/icon-arrow.svg" alt="show age">
+        </button>
+      </div>
+
+      <!--shown age-->
+      <div class="age-content">
+        <div class="age-line">
+          <p class="age-number" id="years-number">38</p>
+          <p>years</p>
+        </div>
+        <div class="age-line">
+          <p class="age-number" id="years-number">3</p>
+          <p>months</p>
+        </div>
+        <div class="age-line">
+          <p class="age-number" id="years-number">26</p>
+          <p>days</p>
+        </div>
+      </div>
+
+    </main>
+
+  </body>
+</html>
