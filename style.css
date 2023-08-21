@@ -145,8 +145,8 @@ button{
     background-color: hsl(259, 100%, 65%);
     border-radius: 50%;
     padding: 15rem;
-    width: 70rem;
-    height: 70rem;
+    width: min(30%, 70rem);
+    aspect-ratio: 1;
     cursor:pointer;
 
     transition: background-color 0.15s;
