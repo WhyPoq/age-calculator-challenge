@@ -18,22 +18,22 @@ html{
 
 body{
     font-family: 'Poppins', sans-serif;
-    font-size: 16px;
+    font-size: 16rem;
     font-weight: 700;
     color: hsl(0, 0%, 8%);
 
     background-color: hsl(0, 0%, 94%);
     padding: 5%;
-    padding-top: 120px;
+    padding-top: 120rem;
 }
 
 main{
     background-color: hsl(0, 0%, 100%);
-    width: min(800px, 100%);
+    width: min(800rem, 100%);
     margin: 0 auto;
-    padding: min(40px, 7%);
-    padding-top: 65px;
-    padding-bottom: 65px;
+    padding: min(40rem, 7%);
+    padding-top: 65rem;
+    padding-bottom: 65rem;
 
     border-radius: 20px;
     border-bottom-right-radius: 100px;
@@ -55,14 +55,14 @@ main{
     flex-grow: 1;
     flex-basis: 0;
 
-    gap: 5px;
+    gap: 5rem;
 }
 
 .field-header{
     width: 100%;
     color: hsl(0, 1%, 44%);
-    font-size: 14px;
-    letter-spacing: 3px;
+    font-size: 14rem;
+    letter-spacing: 3rem;
 }
 
 .field-header.error{
@@ -93,13 +93,13 @@ input[type=number] {
 input{
     outline: none;
 
-    font-size: 20px;
+    font-size: 20rem;
     font-weight: 800;
 
     width: 100%;
-    height: 60px;
-    padding: 10px;
-    padding-left: min(10%, 10px);
+    height: 60rem;
+    padding: 10rem;
+    padding-left: min(10%, 10rem);
     padding-right: 0;
 
     caret-color: hsl(259, 100%, 65%);
@@ -128,8 +128,8 @@ input.error:focus{
     place-items: center;
 
     width: 100%;
-    margin-top: 10px;
-    margin-bottom: 45px;
+    margin-top: 10rem;
+    margin-bottom: 45rem;
 }
 
 .image-container, .middle-line{
@@ -143,8 +143,8 @@ button{
 
     background-color: hsl(259, 100%, 65%);
     border-radius: 50%;
-    padding: 15px;
-    width: min(30%, 70px);
+    padding: 15rem;
+    width: min(30%, 70rem);
     aspect-ratio: 1 / 1;
     cursor:pointer;
 
@@ -170,7 +170,7 @@ img{
     display: flex;
     flex-direction: column;
 
-    font-size: 60px;
+    font-size: 6rem;
     font-style: italic;
     font-weight: 800;
     line-height: 1.2;
@@ -189,7 +189,7 @@ img{
 
 /*@media(min-width: 51.25em){
     .date-selection-content{
-        width: 550px;
+        width: 550rem;
     }
 
     .middle{
