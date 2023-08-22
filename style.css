@@ -12,7 +12,7 @@ html, body, p{
 }
 
 html{
-    font-size: 6.25%;
+    /*font-size: 6.25%;*/
 }
 
 
@@ -187,7 +187,7 @@ img{
     color: hsl(259, 100%, 65%);
 }
 
-@media(min-width: 51.25em){
+/*@media(min-width: 51.25em){
     .date-selection-content{
         width: 550px;
     }
@@ -195,4 +195,4 @@ img{
     .middle{
         place-items: center end;
     }
-}
+}*/
