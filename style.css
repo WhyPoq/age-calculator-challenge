@@ -197,17 +197,17 @@ img{
     color: hsl(259, 100%, 65%);
 }
 
-@media(min-width: 51.25em){
+/*@media(min-width: 51.25em){
     .date-selection-content{
-        /*width: 550rem;*/
+        width: 550rem;
     }
 
     .middle{
-        /*place-items: center end;*/
-        
+        place-items: center end;
+
     }
 
     body{
         background-color: red;
     }
-}
+}*/
