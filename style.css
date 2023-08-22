@@ -30,7 +30,7 @@ body{
 
 main{
     background-color: hsl(0, 0%, 100%);
-    width: min(800rem, 100%);
+    width: min(700rem, 100%);
     margin: 0 auto;
     padding: min(40rem, 7%);
     padding-top: 65rem;
@@ -198,7 +198,19 @@ img{
     color: hsl(259, 100%, 65%);
 }
 
-@media(min-width: 51.25em){
+@media (min-width: 51.25em) and (min-height: 41em){
+    html{
+        height: 100vh;
+    }
+
+    body{
+        padding-top: 0;
+        padding-bottom: 0;
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+
     .date-selection-content{
         width: 550rem;
     }
@@ -206,9 +218,5 @@ img{
     .middle{
         place-items: center end;
 
-    }
-
-    body{
-        background-color: red;
     }
 }
