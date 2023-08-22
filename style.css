@@ -70,7 +70,6 @@ main{
 }
 
 .date-field .error-text{
-    display: none;
     visibility: hidden;
 
     color: hsl(0, 100%, 67%);
