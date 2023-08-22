@@ -198,7 +198,7 @@ img{
     color: hsl(259, 100%, 65%);
 }
 
-/*@media(min-width: 51.25em){
+@media(min-width: 51.25em){
     .date-selection-content{
         width: 550rem;
     }
@@ -211,4 +211,4 @@ img{
     body{
         background-color: red;
     }
-}*/
+}
