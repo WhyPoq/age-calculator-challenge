@@ -12,6 +12,7 @@ html, body, p{
 }
 
 html{
+    -webkit-text-size-adjust:none;
     font-size: 6.25%;
 }
 
