@@ -20,18 +20,18 @@
       <div class="date-selection-content">
         <div class="date-field">
           <p class="field-header">DAY</p>
-          <input type="number" placeholder="DD">
-          <p class="error-text">Error</p>
+          <input type="number" placeholder="DD" id="day-input" oninput="filterNumberInput(this, 2)">
+          <p class="error-text" id="error-text-day">Error</p>
         </div>
         <div class="date-field">
           <p class="field-header">MONTH</p>
-          <input type="number" placeholder="MM">
-          <p class="error-text">Error</p>
+          <input type="text" placeholder="MM" id="month-input" oninput="filterNumberInput(this, 2)">
+          <p class="error-text" id="error-text-month">Error</p>
         </div>
         <div class="date-field">
           <p class="field-header">YEAR</p>
-          <input type="number" placeholder="YYYY">
-          <p class="error-text">Error</p>
+          <input type="number" placeholder="YYYY" id="year-input" oninput="filterNumberInput(this, 4)">
+          <p class="error-text" id="error-text-year">Error</p>
         </div>
       </div>
 
@@ -39,7 +39,7 @@
       <div class="middle">
         <div class="middle-line"></div>
         <div class="button-container">
-          <button>
+          <button onClick="calculateAge()">
             <img src="./assets/images/icon-arrow.svg" alt="show age">
           </button>
         </div>
@@ -52,16 +52,18 @@
           <p>years</p>
         </div>
         <div class="age-line">
-          <p class="age-number" id="years-number">3</p>
+          <p class="age-number" id="months-number">3</p>
           <p>months</p>
         </div>
         <div class="age-line">
-          <p class="age-number" id="years-number">26</p>
-          <p>days</p>
+          <p class="age-number" id="days-number">26</p>
+          <p">days</p>
         </div>
       </div>
 
     </main>
+
+    <script src="main.js"></script>
 
   </body>
 </html>

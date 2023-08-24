@@ -113,6 +113,7 @@ input{
 
 input.error{
     border-color: hsl(0, 100%, 67%);
+    transition: border 0s;
 }
 
 input:focus{
