@@ -163,7 +163,7 @@ button{
     transition: background-color 0.15s;
 }
 
-button:hover{
+button:hover, button:active{
     background-color: hsl(0, 0%, 8%);
 }
 
