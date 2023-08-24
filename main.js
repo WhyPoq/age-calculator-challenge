@@ -12,6 +12,7 @@ function addError(fieldName, errorMessage){
         errorText.textContent = "Error";
     }
     document.getElementById(fieldName + "-input").classList.add("error");
+    document.getElementById(fieldName + "-header").classList.add("error");
 }
 
 function removeError(fieldName){
@@ -19,6 +20,7 @@ function removeError(fieldName){
     errorText.textContent = "Error";
     errorText.style.visibility = "hidden";
     document.getElementById(fieldName + "-input").classList.remove("error");
+    document.getElementById(fieldName + "-header").classList.remove("error");
 }
 
 function clearShownErrors(){
