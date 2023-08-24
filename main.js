@@ -27,7 +27,15 @@ function clearShownErrors(){
     removeError("year");
 }
 
+let yearsAnim = null;
+let monthsAnim = null;
+let daysAnim = null;
+
 function calculateAge(){
+    if(yearsAnim != null) clearInterval(yearsAnim);
+    if(monthsAnim != null) clearInterval(monthsAnim);
+    if(daysAnim != null) clearInterval(daysAnim);
+
     clearShownErrors();
 
     day = document.getElementById("day-input").value;
@@ -133,7 +141,33 @@ function calculateAge(){
     }
     let years = curYear - year;
 
-    document.getElementById("years-number").textContent = years;
-    document.getElementById("days-number").textContent = days;
-    document.getElementById("months-number").textContent = months;
+    let yearsText = document.getElementById("years-number");
+    let monthsText = document.getElementById("months-number");
+    let daysText = document.getElementById("days-number");
+
+    let animDuration = 1500;
+
+    let yearsShown = 0;
+    yearsAnim = setInterval(function () {
+        yearsText.textContent = yearsShown;
+        yearsShown++;
+        if(yearsShown > years)
+            clearInterval(yearsAnim);
+    }, animDuration / (years + 1));
+
+    let monthsShown = 0;
+    monthsAnim = setInterval(function () {
+        monthsText.textContent = monthsShown;
+        monthsShown++;
+        if(monthsShown > months)
+            clearInterval(monthsAnim);
+    }, animDuration / (months + 1));
+
+    let daysShown = 0;
+    daysAnim = setInterval(function () {
+        daysText.textContent = daysShown;
+        daysShown++;
+        if(daysShown > days)
+            clearInterval(daysAnim);
+    }, animDuration / (days + 1));
 }

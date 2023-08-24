@@ -191,6 +191,8 @@ img{
 .age-line{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    width: min(100%, 400rem);
 
     gap: 2%;
 }

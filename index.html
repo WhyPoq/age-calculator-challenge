@@ -17,7 +17,7 @@
   <body>
     <main>
       <!--date selection-->
-      <div class="date-selection-content">
+      <form class="date-selection-content">
         <div class="date-field">
           <p class="field-header">DAY</p>
           <input type="number" placeholder="DD" id="day-input" oninput="filterNumberInput(this, 2)">
@@ -33,7 +33,7 @@
           <input type="number" placeholder="YYYY" id="year-input" oninput="filterNumberInput(this, 4)">
           <p class="error-text" id="error-text-year">Error</p>
         </div>
-      </div>
+      </form>
 
       <!--middle section-->
       <div class="middle">
@@ -48,15 +48,15 @@
       <!--shown age-->
       <div class="age-content">
         <div class="age-line">
-          <p class="age-number" id="years-number">38</p>
+          <p class="age-number" id="years-number">--</p>
           <p>years</p>
         </div>
         <div class="age-line">
-          <p class="age-number" id="months-number">3</p>
+          <p class="age-number" id="months-number">--</p>
           <p>months</p>
         </div>
         <div class="age-line">
-          <p class="age-number" id="days-number">26</p>
+          <p class="age-number" id="days-number">--</p>
           <p">days</p>
         </div>
       </div>
