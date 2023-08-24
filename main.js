@@ -151,8 +151,9 @@ function calculateAge(){
     yearsAnim = setInterval(function () {
         yearsText.textContent = yearsShown;
         yearsShown++;
-        if(yearsShown > years)
+        if(yearsShown > years){
             clearInterval(yearsAnim);
+        }
     }, animDuration / (years + 1));
 
     let monthsShown = 0;

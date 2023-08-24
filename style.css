@@ -211,6 +211,7 @@ img{
 
 .age-number{
     color: hsl(259, 100%, 65%);
+    transition: filter 1s;
 }
 
 @media (max-width: 27em){
