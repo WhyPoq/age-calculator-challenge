@@ -213,6 +213,12 @@ img{
     color: hsl(259, 100%, 65%);
 }
 
+@media (max-width: 27em){
+    .age-content{
+        font-size: 45rem;
+    }
+}
+
 @media (min-width: 51.25em) and (min-height: 41em){
     html{
         height: 100vh;
